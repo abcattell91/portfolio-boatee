@@ -19,7 +19,7 @@
 
   <div class="container-img-btn">
     <% @boat.photos.each do |photo| %>
-    <img class="boat-image" src="<%=@boat.photo.attached? ? cl_image_tag photo.key : @boat.image_url%>">
+    <img class="boat-image" src="<%=cl_image_tag photo.key%>">
     <% end %>
 
     </div>
