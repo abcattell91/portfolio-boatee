@@ -18,7 +18,9 @@
   </div>
 
   <div class="container-img-btn">
-    <img class="boat-image" src="<%=@boat.image_url%>">
+    <% @boat.photos.each do |photo| %>
+    <img class="boat-image" src="<%=@boat.photo.attached? ? cl_image_tag photo.key : @boat.image_url%>">
+    <% end %>
 
     </div>
 </div>
