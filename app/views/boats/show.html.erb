@@ -1,25 +1,4 @@
 <div class="container-hero">
-  <div class="container-img-btn">
-        <!-- carousel -->
-        <div id="carousel-show" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <% @boat.photos.each_with_index do |photo, index| %>
-              <div id="carousel_item_<%= index %>" class="carousel-item<%= index == 0 ? ' active' : '' %>">
-                <img src="<%= cl_image_path photo.key, class: 'boat-image' %>" alt="">
-              </div>
-            <% end %>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel-show" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-  </div>
-
   <div class="container-info shadow bg-white rounded m-3 p-3">
   <div class="boat-title">
     <h1><%= @boat.name %></h1>
@@ -36,7 +15,26 @@
         <p> Guests: <%= @boat.guests %> </p>
       </div>
   </div>
-
+  <div class="carousel-img-btn">
+        <!-- carousel -->
+        <div id="carousel-show" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <% @boat.photos.each_with_index do |photo, index| %>
+              <div id="carousel_item_<%= index %>" class="carousel-item<%= index == 0 ? ' active' : '' %>">
+              <img src="<%= cl_image_path photo.key, width:500, crop: :fit, class: 'boat-image' %>" alt="">
+              </div>
+            <% end %>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-show" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
 </div>
 <div class="container-button">

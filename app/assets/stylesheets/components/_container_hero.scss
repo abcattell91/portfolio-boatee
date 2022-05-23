@@ -1,12 +1,27 @@
-#carousel-show {
-  width: 450px !important;
-  height: 450px !important;
-  background-size: cover !important;
-  background-position: center !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  border-radius: 5px !important;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2) !important;
+.carousel {
+  max-height: 800px;
+}
 
+.carousel-inner > .item img,
+.carousel-inner > .item > a > img {
+  min-height:500px;
+  max-width: 100%;
+}
+
+
+.item,
+.active,
+.carousel-inner {
+  height: 100%;
+}
+
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
