@@ -5,7 +5,7 @@
         <div id="carousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <% @boat.photos.each_with_index do |photo, index| %>
-              <div id="carousel_item_<%= index %>" class="carousel-item<%= index == 0 ? 'active' : '' %>">
+              <div id="carousel_item_<%= index %>" class="carousel-item<%= index == 0 ? ' active' : '' %>">
                 <img src="<%= cl_image_path photo.key, class: 'd-block w-100' %>" alt="">
               </div>
             <% end %>
