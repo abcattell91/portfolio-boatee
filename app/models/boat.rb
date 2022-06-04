@@ -14,6 +14,7 @@ class Boat < ApplicationRecord
   validates :boat_type, inclusion: { in: BOAT_CATEGORIES }
   validates :guests, inclusion: { in: 0..100 }, numericality: { only: true }
   validates :docked, inclusion: [true, false]
+  validates :image_url, presence: true
 
   def unavailable_dates
     bookings.pluck(:start_date, :end_date).map do |range|

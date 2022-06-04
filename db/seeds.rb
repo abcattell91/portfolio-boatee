@@ -37,6 +37,8 @@ boat1 = Boat.create!(
                       "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
                         "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
 )
+
+
 boat2 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
