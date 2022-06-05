@@ -81,7 +81,7 @@ a:active{
   text-decoration: none;
 }
 .home-card-text {
-  color: black;
+  color: #ac511f;
 }
 
 .home-card-text-small {
@@ -108,4 +108,46 @@ a:active{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 24px;
+}
+
+.index-card-category {
+  display: flex;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+  height: 350px;
+  width: 350px;
+}
+.index-card-category.a {
+  height: 350px;
+  width: 350px;
+}
+
+.carousel-boat-image {
+  height: 200px;
+  width: 350px;
+  object-fit: cover;
+}
+
+.carousel-slide {
+  width: 350px !important;
+  border-radius: 8px !important;
+}
+.index-item img {
+  width: 350px !important;
+  height: 225px !important;
+  object-fit: cover !important;
+}
+.home-card-body {
+  position: relative;
+  top: 65%;
+  padding-left: 8px;
+}
+.index-card-body {
+  position: relative;
+  top: 65%;
+  padding-left: 8px;
 }

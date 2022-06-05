@@ -20,17 +20,24 @@
   <% @boats.each do |boat| %>
   <div class="home-card-category">
     <%= link_to boat_path(boat) do %>
-    <%= image_tag("#{boat.image_url}", class:"boat-img-card img-thumbnail")%>
-      <div class="card-body">
-      <h4 class="boat-card-text"><%= boat.name %>
-      <h5 class="home-card-text-small"><i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= boat.price %>p/n<br>
-      <i class="fa-solid fa-bed"></i>&nbsp;<%= boat.guests %>
-      &nbsp;&nbsp;<i class="fa-solid fa-location-arrow"></i>&nbsp;<%= boat.location %>
-      </h5>
+      <div id="carousel-show" class="carousel-slide" data-bs-ride="carousel">
+        <div class="index-carousel-inner">
+        <% boat.photos.each_with_index do |photo, index| %>
+          <div id="carousel_item_<%= index %>" class="index-item carousel-item<%= index == 0 ? ' active' : '' %>">
+          <img src="<%= cl_image_path photo.key, class: 'carousel-boat-image' %>" alt="">
+          </div>
+        <% end %>
+          </div>
         </div>
-    <% end %> <!-- end of link_to -->
+      <div class="index-card-body">
+        <h4 class="index-card-text"><%= boat.name %></h4>
+        <h5 class="home-card-text-small"><i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= boat.price %>p/n<br>
+        <i class="fa-solid fa-bed"></i>&nbsp;<%= boat.guests %>
+        &nbsp;&nbsp;<i class="fa-solid fa-location-arrow"></i>&nbsp;<%= boat.location %>
+        </h5>
+      </div>
+      <% end %> <!-- end of link_to -->
     </div>
     <% end %> <!-- end of boat.each -->
-</div>
-
+  </div>
 </div>

@@ -46,11 +46,20 @@
   justify-content: center;
   padding: 20px;
 }
-
-.carousel-control-prev {
-  color: grey;
+.carousel-inner {
+  height: 500px;
 }
-
 .favourites {
   padding-top: 15px;
+}
+.home-card-category {
+  display: flex;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 32px;
+  height: 350px;
+  width: 350px;
 }
