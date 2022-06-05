@@ -81,7 +81,7 @@ a:active{
   text-decoration: none;
 }
 .home-card-text {
-  color: #ac511f;
+  color: black;
 }
 
 .home-card-text-small {
@@ -102,6 +102,10 @@ a:active{
   border-top-right-radius: 32px;
   border-top-left-radius: 32px;
   background-repeat: no-repeat;
+}
+
+.carousel-inner img {
+  object-fit: contain;
 }
 
 .booking-home-cards {
@@ -140,17 +144,4 @@ a:active{
   width: 350px !important;
   height: 225px !important;
   object-fit: cover !important;
-}
-.home-card-body {
-  position: relative;
-  top: 65%;
-  padding-left: 8px;
-}
-.index-card-body {
-  position: relative;
-  top: 65%;
-  padding-left: 8px;
-}
-.carousel-inner img {
-  object-fit: contain;
 }
