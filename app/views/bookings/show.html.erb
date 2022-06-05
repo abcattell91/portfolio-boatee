@@ -7,10 +7,23 @@
         <p>Boat-location: <strong><%= @booking.boat.location %> </strong></p>
         <p>Pack your swim gear and get ready to rumble!</p>
       </div>
-
-  <div class="container-img-btn">
-    <img class="boat-image" src="<%=@booking.boat.image_url%>">
-  </div>
+   <!-- carousel -->
+  <div id="carousel-show" class="carousel slide" data-bs-ride="carousel">
+    <div class="show-carousel-inner">
+      <% @booking.boat.photos.each_with_index do |photo, index| %>
+      <div id="carousel_item_<%= index %>" class="carousel-item<%= index == 0 ? ' active' : '' %>">
+        <img src="<%= cl_image_path photo.key, class: '' %>" alt="">
+      </div>
+      <% end %>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-show" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel-show" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
 </div>
 <div class="container-booking-btn">
   <%= link_to 'Cancel Booking', booking_path, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary"%>
