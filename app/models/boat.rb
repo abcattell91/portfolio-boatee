@@ -1,5 +1,6 @@
 class Boat < ApplicationRecord
   has_many :bookings, dependent: :destroy
+  has_many_attached :photos
 
   include PgSearch::Model
   pg_search_scope :search_by_name_and_location,
@@ -8,10 +9,10 @@ class Boat < ApplicationRecord
       tsearch: { prefix: true }
     }
 
+
   BOAT_CATEGORIES = %w[Bracera Banana-Boat Barge Dinghy Pedalo Punt Yacht Ship Catamaran Hovercraft]
-  validates :name, :location, :price, :image_url, presence: true
+  validates :name, :location, :price, presence: true
   validates :boat_type, inclusion: { in: BOAT_CATEGORIES }
-  validates :image_url, presence: true, allow_blank: true, format: { with: /(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-=\?]*)*\/?/ }
   validates :guests, inclusion: { in: 0..100 }, numericality: { only: true }
   validates :docked, inclusion: [true, false]
 
