@@ -81,7 +81,7 @@ a:active{
   text-decoration: none;
 }
 .home-card-text {
-  color: black;
+  color: #ac511f;
 }
 
 .home-card-text-small {
@@ -144,4 +144,14 @@ a:active{
   width: 350px !important;
   height: 225px !important;
   object-fit: cover !important;
+}
+.home-card-body {
+  position: relative;
+  top: 65%;
+  padding-left: 8px;
+}
+.index-card-body {
+  position: relative;
+  top: 65%;
+  padding-left: 8px;
 }
