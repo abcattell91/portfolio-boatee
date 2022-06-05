@@ -37,6 +37,7 @@ class BoatsController < ApplicationController
     redirect_to boats_path
   end
 
+
   private
 
   def boat_params
