@@ -1,26 +1,19 @@
 <div class="container-hero">
+
   <div class="container-info shadow bg-white rounded m-3 p-3">
-    <div class="boat-title">
-      <h1><%= @boat.name %></h1>
-    </div>
-    <div class="boat-info">
-      <p> Docked? - <% if @boat.docked %>
+  <div class="boat-title">
+    <h1><%= @boat.name %></h1>
+  </div>
+      <div class="boat-info">
+        <p> Docked? - <% if @boat.docked %>
           <%= "Yes" %>
         <% else %>
           <%= "No" %>
         <% end %></p>
-      <p> Cost: £<%= @boat.price %> per night </p>
-      <p> Boat location <%= @boat.location %> </p>
-      <p> Boat Type: <%= @boat.boat_type %> </p>
-      <p> Guests: <%= @boat.guests %> </p>
-    </div>
-  </div>
-        <!-- carousel -->
-  <div id="carousel-show" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <% @boat.photos.each_with_index do |photo, index| %>
-      <div id="carousel_item_<%= index %>" class="carousel-item<%= index == 0 ? ' active' : '' %>">
-        <img src="<%= cl_image_path photo.key, class: 'carousel-boat-image' %>" alt="">
+        <p> Cost: £<%= @boat.price %> per night </p>
+        <p> Boat location <%= @boat.location %> </p>
+        <p> Boat Type: <%= @boat.boat_type %> </p>
+        <p> Guests: <%= @boat.guests %> </p>
       </div>
       <% end %>
     </div>
@@ -33,6 +26,11 @@
         <span class="visually-hidden">Next</span>
     </div>
   </div>
+
+  <div class="container-img-btn">
+    <img class="boat-image" src="<%=@boat.image_url%>">
+
+    </div>
 </div>
 <div class="container-button">
   <%= link_to 'Back', boats_path, class: "btn btn-lg btn-primary" %>
@@ -42,7 +40,7 @@
   <%= render "bookings/new" %>
 </div>
 
-
+<div>
 <div class="container-reviews p-5 m-5 shadow bg-white rounded">
   <h2>Reviews for <%= @boat.name %></h2>
   <% @bookings.each do |booking| %>
