@@ -37,10 +37,6 @@
   padding-bottom: 15px;
 }
 
-.carousel {
-  width: 75%;
-}
-
 .card-wrapper {
   display: flex;
   justify-content: center;
@@ -62,4 +58,9 @@
   border-radius: 32px;
   height: 350px;
   width: 350px;
+}
+.home-card-body {
+  position: relative;
+  top: 67%;
+  padding-left: 8px;
 }
