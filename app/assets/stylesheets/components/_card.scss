@@ -151,3 +151,6 @@ a:active{
   top: 65%;
   padding-left: 8px;
 }
+.carousel-inner img {
+  object-fit: contain;
+}

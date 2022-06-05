@@ -6,6 +6,7 @@
     class: "form-control",
     placeholder: "Find a boat by name or location"
   %>
+  <% end %>
 </div>
   <div class="search-bar-logo">
   <%= submit_tag "Search", class: "btn btn-primary" %>
@@ -15,8 +16,6 @@
 
 <div class="home-card-container">
 <div class="home-cards">
-
-<% end %>
   <% @boats.each do |boat| %>
   <div class="home-card-category">
     <%= link_to boat_path(boat) do %>
