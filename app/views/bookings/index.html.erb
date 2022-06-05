@@ -5,7 +5,6 @@
   <% @future_bookings.each do |booking| %>
   <div class="home-card-category">
     <%= link_to booking_path(booking) do %>
-    <%= image_tag("#{booking.boat.image_url}", class:"boat-img-card img-thumbnail")%>
       <div class="card-body">
       <h4 class="boat-card-text"><%= booking.boat.name %>
       <h5 class="home-card-text-small"><i class="fa-solid fa-moon"></i>&nbsp;<%= (booking.end_date - booking.start_date).to_i %> Nights<br>
