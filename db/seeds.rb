@@ -28,6 +28,7 @@ file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
 
+
 boat1 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
