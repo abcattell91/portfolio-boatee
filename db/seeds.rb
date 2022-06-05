@@ -1,4 +1,5 @@
 require 'faker'
+require "open-uri"
 
 puts "Cleaning up database..."
 Boat.delete_all
@@ -23,6 +24,10 @@ user10 = User.create(email: "email10@email.com", password: "123456")
 
 puts 'Creating Boats...'
 
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat1 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
@@ -30,13 +35,15 @@ boat1 = Boat.create!(
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
-  image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                  "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                    "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                      "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                        "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
 )
+boat1.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat1.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat1.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat2 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
@@ -44,279 +51,314 @@ boat2 = Boat.create!(
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
-  image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                  "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                    "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                      "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                        "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
 )
+boat2.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat2.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat2.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat3 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat3.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat3.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat3.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat4 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat4.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat4.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat4.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat5 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat5.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat5.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat5.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat6 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat6.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat6.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat6.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat7 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat7.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat7.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat7.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat8 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat8.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat8.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat8.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat9 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat9.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat9.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat9.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat10 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat10.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat10.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat10.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat11 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat11.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat11.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat11.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat12 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat12.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat12.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat12.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat13 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat13.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat13.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat13.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat14 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat14.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat14.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat14.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat15 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat15.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat15.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat15.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat16 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat16.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat16.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat16.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat17 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat17.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat17.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat17.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat18 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat18.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat18.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat18.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat19 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat19.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat19.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat19.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat20 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat20.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat20.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat20.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+
 boat21 = Boat.create!(
-    name: Faker::Name.name,
-    docked: Faker::Boolean.boolean,
-    location: Faker::Address.street_address,
-    boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-    price: rand(50..999),
-    guests: rand(1..100),
-    image_url: ["https://tinyurl.com/44tt2rk5", "https://tinyurl.com/yc5xahaj", "https://tinyurl.com/3nbv4thh", "https://tinyurl.com/muyf46z8", "https://tinyurl.com/yw8e65ub",
-                  "https://tinyurl.com/53tyrfy8", "https://tinyurl.com/4y4ce9uc", "https://tinyurl.com/mwnmrpbf", "https://tinyurl.com/s5cs68ve", "https://tinyurl.com/2p9fa88w",
-                    "https://tinyurl.com/a3jtrp89", "https://tinyurl.com/2p83s3pn", "https://tinyurl.com/yckn4sz3", "https://tinyurl.com/2p8sya8f", "https://tinyurl.com/2p8wf8ua",
-                      "https://tinyurl.com/yv8tc3vj", "https://tinyurl.com/2p99468a", "https://tinyurl.com/umuryr3s", "https://tinyurl.com/6dn7hd23", "https://tinyurl.com/34kwxu47",
-                        "https://bit.ly/38rRyXv", "https://bit.ly/3wnYfSr", "https://bit.ly/3FE2JbL", "https://tinyurl.com/423s6s47", "https://tinyurl.com/2p8kce57", "https://tinyurl.com/bdzt34k4", "https://tinyurl.com/2p9cux8n", "https://tinyurl.com/mr3rnp5w",
-                          "https://tinyurl.com/yckp7x58", "https://tinyurl.com/yc4xv3jc", "https://tinyurl.com/2r7s4uu7", "https://tinyurl.com/59cbjyme", "https://tinyurl.com/2p8n98nh"].sample
+  name: Faker::Name.name,
+  docked: Faker::Boolean.boolean,
+  location: Faker::Address.street_address,
+  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+  price: rand(50..999),
+  guests: rand(1..100),
 )
+boat21.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+boat21.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+boat21.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
 puts 'Creating Bookings'
 
@@ -506,9 +548,6 @@ booking31 = Booking.create!(
   start_date: DateTime.strptime("13/10/2022 11:00", "%d/%m/%Y %H:%M"),
   end_date: DateTime.strptime("15/10/2022 17:00", "%d/%m/%Y %H:%M"),
 )
-
-
-
 
 puts 'Creating Reviews'
 

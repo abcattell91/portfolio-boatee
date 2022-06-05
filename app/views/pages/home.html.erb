@@ -12,42 +12,32 @@
   </div>
 </div>
 
-<%# carousel %>
-<h2 class="favourites">Our Top Picks 🛟</h2>
-<div class="container">
-  <div class="row justify-content-center">
-    <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <% @boats.each_with_index do |boat, i| %>
-          <div class="carousel-item <%= i == 0 ? "active" : "" %>">
-            <div class="card-wrapper">
-              <div class="home-card-category">
-                <%= link_to boat_path(boat) do %>
-                  <%= image_tag("#{boat.image_url}", class:"card-img-top img-thumbnail")%>
-                  <div class="card-body">
-                    <h4 class="home-card-text"><%= boat.name %>
-                      <% @reviews.each do |review| %>
-                        <%= '⭐️' * review.rating %>
-                      <% end %>
-                    </h4>
-                    <h5 class="home-card-text-small"><i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= boat.price %>p/n<br>
-                      <i class="fa-solid fa-bed"></i>&nbsp;<%= boat.guests %>
-                    </h5>
-                  </div>
-                <% end %> <!-- end of link_to -->
-              </div>
-            </div>
+<div class="home-card-container">
+  <div class="home-cards">
+    <% @boats.each do |boat| %>
+    <div class="index-card-category">
+      <%= link_to boat_path(boat) do %>
+      <div id="carousel-show" class="carousel-slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <% boat.photos.each_with_index do |photo, index| %>
+          <div id="carousel_item_<%= index %>" class="index-item carousel-item<%= index == 0 ? ' active' : '' %>">
+            <img src="<%= cl_image_path photo.key, class: 'carousel-boat-image' %>" alt="">
           </div>
         <% end %>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        </div>
       </div>
+      <div class="card-body">
+        <h4 class="home-card-text"><%= boat.name %>
+          <% @reviews.each do |review| %>
+            <%= '⭐️' * review.rating %>
+          <% end %>
+        </h4>
+        <h5 class="home-card-text-small"><i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= boat.price %>p/n<br>
+          <i class="fa-solid fa-bed"></i>&nbsp;<%= boat.guests %>
+        </h5>
+      </div>
+      <% end %> <!-- end of link_to -->
     </div>
+    <% end %> <!-- end of boat.each -->
   </div>
 </div>
