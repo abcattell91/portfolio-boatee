@@ -10,7 +10,7 @@
       <h5 class="home-card-text-small"><i class="fa-solid fa-moon"></i>&nbsp;<%= (booking.end_date - booking.start_date).to_i %> Nights<br>
       <h5 class="home-card-text-small"><i class="fa-solid fa-calendar-days"></i></i>&nbsp;<%=booking.start_date.strftime("%d-%m-%Y") %> - <%= booking.end_date.strftime("%d-%m-%Y") %><br>
       <h5 class="home-card-text-small"><i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= booking.cost%> Total<br>
-      <h5 class="home-card-text-small"><i class="fa-solid fa-location-arrow"></i>&nbsp;<%= booking.boat.location%>
+      <h5 class="home-card-text-small"><i class="fa-solid fa-address-arrow"></i>&nbsp;<%= booking.boat.address%>
       </h5>
         </div>
     <% end %> <!-- end of link_to -->
@@ -31,7 +31,7 @@
       <h5 class="home-card-text-small"><i class="fa-solid fa-moon"></i>&nbsp;<%= (booking.end_date - booking.start_date).to_i %> Nights<br>
       <h5 class="home-card-text-small"><i class="fa-solid fa-calendar-days"></i></i>&nbsp;<%=booking.start_date.strftime("%d-%m-%Y") %> - <%= booking.end_date.strftime("%d-%m-%Y") %><br>
       <h5 class="home-card-text-small"><i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= booking.cost%> Total<br>
-      <h5 class="home-card-text-small"><i class="fa-solid fa-location-arrow"></i>&nbsp;<%= booking.boat.location%>
+      <h5 class="home-card-text-small"><i class="fa-solid fa-address-arrow"></i>&nbsp;<%= booking.boat.address%>
       </h5>
         </div>
     <% end %> <!-- end of link_to -->

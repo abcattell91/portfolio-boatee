@@ -10,7 +10,7 @@
           <%= "No" %>
         <% end %></p>
       <p> Cost: £<%= @boat.price %> per night </p>
-      <p> Boat location <%= @boat.location %> </p>
+      <p> Boat address <%= @boat.address %> </p>
       <p> Boat Type: <%= @boat.boat_type %> </p>
       <p> Guests: <%= @boat.guests %> </p>
     </div>
@@ -42,7 +42,6 @@
   <button type="button" class=" btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#new_booking_modal">Book this Boat</button>
   <%= render "bookings/new" %>
 </div>
-
 
 <div class="container-reviews p-5 m-5 shadow bg-white rounded">
   <h2>Reviews for <%= @boat.name %></h2>
