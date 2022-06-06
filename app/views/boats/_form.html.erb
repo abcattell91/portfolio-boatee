@@ -6,7 +6,9 @@
            <%= f.input :name, :input_html => { :class => 'foo' }%>
            <%= f.input :boat_type, collection: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"], as: :select %>
            <%= f.input :docked, as: :select %>
-           <%= f.input :location %>
+           <%= f.input :address,
+              input_html: { data: { geocoder_target: "address" }, class: 'd-none' },
+              wrapper_html: { data: { controller: "geocoder", geocoder_api_key_value: ENV['MAPBOX_API_KEY'] } } %>
            <%= f.input :price, input_html: { min: 0, step: 'any' } %>
            <%= f.input :guests, input_html: { min: 0, max: 100, step: 'any' } %>
            <%= f.input :photos, as: :file, input_html: { multiple: true } %>

@@ -4,8 +4,16 @@ class BoatsController < ApplicationController
 
   def index
     @boats = policy_scope(Boat)
+    @markers = @boats.geocoded.map do |boat|
+      {
+        lat: boat.latitude,
+        lng: boat.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { boat: boat }),
+        image_url: helpers.asset_url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngplay.com%2Fwp-content%2Fuploads%2F2%2FYacht-Transparent-Image.png&f=1&nofb=1")
+      }
+    end
     if params[:query].present?
-      @boats = Boat.search_by_name_and_location(params[:query])
+      @boats = Boat.search_by_name_and_address(params[:query])
     else
       @boats = policy_scope(Boat)
     end
@@ -40,7 +48,7 @@ class BoatsController < ApplicationController
   private
 
   def boat_params
-    params.require(:boat).permit(:name, :boat_id, :price, :location, :guests, :boat_type, :docked, photos:[])
+    params.require(:boat).permit(:name, :boat_id, :price, :address, :guests, :boat_type, :docked, photos:[])
   end
 
   def find_boat

@@ -32,7 +32,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat1 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -48,7 +48,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat2 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -64,7 +64,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat3 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -80,7 +80,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat4 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -96,7 +96,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat5 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -112,7 +112,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat6 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -128,7 +128,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat7 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -144,7 +144,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat8 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -160,7 +160,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat9 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -176,7 +176,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat10 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -192,7 +192,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat11 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -208,7 +208,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat12 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -224,7 +224,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat13 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -240,7 +240,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat14 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -256,7 +256,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat15 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -272,7 +272,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat16 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -288,7 +288,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat17 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -304,7 +304,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat18 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -320,7 +320,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat19 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -336,7 +336,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat20 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),
@@ -352,7 +352,7 @@ file3 = URI.open('https://tinyurl.com/ycytfv8d')
 boat21 = Boat.create!(
   name: Faker::Name.name,
   docked: Faker::Boolean.boolean,
-  location: Faker::Address.street_address,
+  address: Faker::Address.street_address,
   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
   price: rand(50..999),
   guests: rand(1..100),

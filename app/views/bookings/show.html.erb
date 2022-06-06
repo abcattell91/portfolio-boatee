@@ -4,7 +4,7 @@
         <p>Total trip cost: <strong>£<%= @booking.cost %></strong></p>
         <p>You have booked from <strong><%= @booking.start_date.strftime("%d-%m-%Y") %> to <%= @booking.end_date.strftime("%d-%m-%Y") %></strong></p>
         <p>Your total trip will be: <strong><%= (@booking.end_date - @booking.start_date).to_i %> days</strong></p>
-        <p>Boat-location: <strong><%= @booking.boat.location %> </strong></p>
+        <p>Boat-address: <strong><%= @booking.boat.address %> </strong></p>
         <p>Pack your swim gear and get ready to rumble!</p>
       </div>
    <!-- carousel -->
