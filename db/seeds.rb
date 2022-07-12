@@ -12,15 +12,25 @@ puts "Database cleaned"
 puts 'Creating Users...'
 
 user1 = User.create(email: "email@email.com", password: "123456")
+puts "Created #{user1}"
 user2 = User.create(email: "email2@email.com", password: "123456")
+puts "Created #{user2}"
 user3 = User.create(email: "email3@email.com", password: "123456")
+puts "Created #{user3}"
 user4 = User.create(email: "email4@email.com", password: "123456")
+puts "Created #{user4}"
 user5 = User.create(email: "email5@email.com", password: "123456")
+puts "Created #{user5}"
 user6 = User.create(email: "email6@email.com", password: "123456")
+puts "Created #{user6}"
 user7 = User.create(email: "email7@email.com", password: "123456")
+puts "Created #{user7}"
 user8 = User.create(email: "email8@email.com", password: "123456")
+puts "Created #{user8}"
 user9 = User.create(email: "email9@email.com", password: "123456")
+puts "Created #{user9}"
 user10 = User.create(email: "email10@email.com", password: "123456")
+puts "Created #{user10}"
 
 puts 'Creating Boats...'
 
@@ -44,6 +54,7 @@ boat1.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg'
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat2 = Boat.create!(
   name: Faker::Name.name,
@@ -60,6 +71,7 @@ boat2.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg'
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat3 = Boat.create!(
   name: Faker::Name.name,
@@ -76,6 +88,7 @@ boat3.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg'
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat4 = Boat.create!(
   name: Faker::Name.name,
@@ -92,6 +105,7 @@ boat4.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg'
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat5 = Boat.create!(
   name: Faker::Name.name,
@@ -108,6 +122,7 @@ boat5.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg'
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat6 = Boat.create!(
   name: Faker::Name.name,
@@ -124,6 +139,7 @@ boat6.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg'
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat7 = Boat.create!(
   name: Faker::Name.name,
@@ -140,6 +156,7 @@ boat7.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg'
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat8 = Boat.create!(
   name: Faker::Name.name,
@@ -156,6 +173,7 @@ boat8.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg'
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat9 = Boat.create!(
   name: Faker::Name.name,
@@ -172,6 +190,7 @@ boat9.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg'
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat10 = Boat.create!(
   name: Faker::Name.name,
@@ -188,6 +207,7 @@ boat10.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat11 = Boat.create!(
   name: Faker::Name.name,
@@ -204,6 +224,7 @@ boat11.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat12 = Boat.create!(
   name: Faker::Name.name,
@@ -220,6 +241,7 @@ boat12.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat13 = Boat.create!(
   name: Faker::Name.name,
@@ -236,6 +258,7 @@ boat13.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat14 = Boat.create!(
   name: Faker::Name.name,
@@ -252,6 +275,7 @@ boat14.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat15 = Boat.create!(
   name: Faker::Name.name,
@@ -268,6 +292,7 @@ boat15.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat16 = Boat.create!(
   name: Faker::Name.name,
@@ -284,6 +309,7 @@ boat16.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat17 = Boat.create!(
   name: Faker::Name.name,
@@ -300,6 +326,7 @@ boat17.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat18 = Boat.create!(
   name: Faker::Name.name,
@@ -316,6 +343,7 @@ boat18.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat19 = Boat.create!(
   name: Faker::Name.name,
@@ -332,6 +360,7 @@ boat19.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat20 = Boat.create!(
   name: Faker::Name.name,
@@ -348,6 +377,7 @@ boat20.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg
 file = URI.open('https://tinyurl.com/23vsvy33')
 file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 boat21 = Boat.create!(
   name: Faker::Name.name,
@@ -360,6 +390,11 @@ boat21 = Boat.create!(
 boat21.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
 boat21.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
 boat21.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+
+file = URI.open('https://tinyurl.com/23vsvy33')
+file2 = URI.open('https://tinyurl.com/3rxatv8n')
+file3 = URI.open('https://tinyurl.com/ycytfv8d')
+puts 'Created Boat'
 
 puts 'Creating Bookings'
 
