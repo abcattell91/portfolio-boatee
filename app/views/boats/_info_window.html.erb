@@ -1,2 +1,5 @@
-<%= link_to boat.name, boat_path(boat) %>
-<p><%= boat.address %></p>
+<div class="info_window">
+  <%= link_to boat.name, boat_path(boat) %>
+    <p><%= boat.address %></p>
+  <img src="<%= cl_image_path boat.photos.first.key%>" alt="">
+</div>
