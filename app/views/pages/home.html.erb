@@ -27,13 +27,13 @@
         </div>
       </div>
       <div class="home-card-body">
-        <h4 class="home-card-text"><%= boat.name %>
+        <h4 class="home-card-text">&nbsp;<%= boat.name %>
           <% @reviews.each do |review| %>
-            <%= '⭐️' * review.rating %>
+            &nbsp;<%= '⭐️' * review.rating %>
           <% end %>
         </h4>
-        <h5 class="home-card-text-small"><i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= boat.price %>p/n<br>
-          <i class="fa-solid fa-bed"></i>&nbsp;<%= boat.guests %>
+        <h5 class="home-card-text-small">&nbsp;<i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= boat.price %>p/n<br>
+        &nbsp;<i class="fa-solid fa-bed"></i>&nbsp;<%= boat.guests %>
         </h5>
       </div>
       <% end %> <!-- end of link_to -->

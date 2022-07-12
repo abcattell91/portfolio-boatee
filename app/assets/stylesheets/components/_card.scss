@@ -81,12 +81,14 @@ a:active{
 }
 .home-card-text {
   color: #ac511f;
+  max-width: 65%;
 }
 
 .home-card-text-small {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none !important;
   font-size: 1.1rem;
+  max-width: 100%;
 }
 
 .boat-card-text {
@@ -109,7 +111,7 @@ a:active{
 
 .booking-home-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 24px;
 }
 .index-card-category {
@@ -136,6 +138,9 @@ a:active{
 
 .carousel-slide {
   border-radius: 8px !important;
+}
+.index-item {
+  max-width: min-content;
 }
 .index-item img {
   width: 350px !important;

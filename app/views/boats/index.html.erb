@@ -1,4 +1,4 @@
-<div class="container">
+<div class="map-container">
   <div style="width: 100%; height: 600px;"
     data-controller="mapbox"
     data-mapbox-markers-value="<%= @markers.to_json %>"
@@ -18,10 +18,10 @@
           </div>
         <% end %>
       <div class="index-card-body">
-        <h4 class="boat-card-text"><%= boat.name %></h4>
-        <h5 class="home-card-text-small"><i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= boat.price %>p/n<br>
-        <i class="fa-solid fa-bed"></i>&nbsp;<%= boat.guests %>
-        &nbsp;&nbsp;<i class="fa-solid fa-address-arrow"></i>&nbsp;<%= boat.address %></h5>
+        <h4 class="boat-card-text">&nbsp<%= boat.name %></h4>
+        <h5 class="home-card-text-small">&nbsp<i class="fa-solid fa-sterling-sign"></i>&nbsp;<%= boat.price %>p/n<br>
+        &nbsp<i class="fa-solid fa-bed"></i>&nbsp;<%= boat.guests %><br>
+        &nbsp<i class="fa-solid fa-location-arrow"></i>&nbsp;<%= boat.address %></h5>
       </div>
       </div>
       </div>
