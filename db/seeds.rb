@@ -56,359 +56,359 @@ file2 = URI.open('https://tinyurl.com/3rxatv8n')
 file3 = URI.open('https://tinyurl.com/ycytfv8d')
 puts 'Created Boat'
 
-boat2 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat2.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat2.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat2.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat2 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat2.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat2.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat2.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat3 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat3.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat3.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat3.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat3 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat3.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat3.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat3.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat4 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat4.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat4.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat4.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat4 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat4.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat4.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat4.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat5 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat5.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat5.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat5.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat5 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat5.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat5.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat5.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat6 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat6.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat6.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat6.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat6 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat6.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat6.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat6.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat7 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat7.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat7.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat7.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat7 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat7.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat7.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat7.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat8 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat8.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat8.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat8.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat8 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat8.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat8.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat8.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat9 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat9.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat9.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat9.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat9 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat9.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat9.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat9.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat10 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat10.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat10.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat10.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat10 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat10.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat10.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat10.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat11 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat11.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat11.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat11.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat11 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat11.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat11.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat11.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat12 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat12.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat12.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat12.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat12 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat12.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat12.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat12.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat13 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat13.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat13.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat13.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat13 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat13.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat13.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat13.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat14 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat14.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat14.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat14.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat14 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat14.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat14.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat14.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat15 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat15.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat15.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat15.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat15 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat15.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat15.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat15.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat16 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat16.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat16.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat16.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat16 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat16.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat16.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat16.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat17 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat17.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat17.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat17.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat17 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat17.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat17.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat17.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat18 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat18.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat18.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat18.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat18 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat18.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat18.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat18.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat19 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat19.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat19.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat19.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat19 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat19.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat19.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat19.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat20 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat20.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat20.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat20.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat20 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat20.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat20.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat20.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
-boat21 = Boat.create!(
-  name: Faker::Name.name,
-  docked: Faker::Boolean.boolean,
-  address: Faker::Address.street_address,
-  boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
-  price: rand(50..999),
-  guests: rand(1..100),
-)
-boat21.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
-boat21.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
-boat21.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
+# boat21 = Boat.create!(
+#   name: Faker::Name.name,
+#   docked: Faker::Boolean.boolean,
+#   address: Faker::Address.street_address,
+#   boat_type: ["Bracera", "Banana-Boat", "Barge", "Dinghy", "Pedalo", "Punt", "Yacht", "Ship", "Catamaran", "Hovercraft"].sample,
+#   price: rand(50..999),
+#   guests: rand(1..100),
+# )
+# boat21.photos.attach(io: file, filename: 'boat1.jpeg', content_type: 'image/jpg')
+# boat21.photos.attach(io: file2, filename: 'boat2.jpeg', content_type: 'image/jpg')
+# boat21.photos.attach(io: file3, filename: 'boat3.jpeg', content_type: 'image/jpg')
 
-file = URI.open('https://tinyurl.com/23vsvy33')
-file2 = URI.open('https://tinyurl.com/3rxatv8n')
-file3 = URI.open('https://tinyurl.com/ycytfv8d')
-puts 'Created Boat'
+# file = URI.open('https://tinyurl.com/23vsvy33')
+# file2 = URI.open('https://tinyurl.com/3rxatv8n')
+# file3 = URI.open('https://tinyurl.com/ycytfv8d')
+# puts 'Created Boat'
 
 puts 'Creating Bookings'
 
 booking1 = Booking.create!(
   user: user1,
   boat: boat1,
-  start_date: DateTime.strptime("08/06/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("10/06/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("08/06/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("10/06/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking2 = Booking.create!(
   user: user2,
   boat: boat2,
-  start_date: DateTime.strptime("08/07/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("10/07/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("08/07/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("10/07/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking3 = Booking.create!(
   user: user3,
@@ -455,26 +455,26 @@ booking9 = Booking.create!(
 booking10 = Booking.create!(
   user: user10,
   boat: boat10,
-  start_date: DateTime.strptime("27/06/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("29/06/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("27/06/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("29/06/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking11 = Booking.create!(
   user: user1,
   boat: boat11,
-  start_date: DateTime.strptime("30/06/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("01/07/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("30/06/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("01/07/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking12 = Booking.create!(
   user: user2,
   boat: boat12,
-  start_date: DateTime.strptime("02/07/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("04/07/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("02/07/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("04/07/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking13 = Booking.create!(
   user: user3,
   boat: boat13,
-  start_date: DateTime.strptime("14/06/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("16/06/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("14/06/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("16/06/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking14 = Booking.create!(
   user: user4,
@@ -485,14 +485,14 @@ booking14 = Booking.create!(
 booking15 = Booking.create!(
   user: user5,
   boat: boat15,
-  start_date: DateTime.strptime("16/06/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("18/06/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("16/06/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("18/06/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking16 = Booking.create!(
   user: user6,
   boat: boat16,
-  start_date: DateTime.strptime("19/06/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("21/06/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("19/06/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("21/06/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking17 = Booking.create!(
   user: user7,
@@ -503,8 +503,8 @@ booking17 = Booking.create!(
 booking18 = Booking.create!(
   user: user8,
   boat: boat18,
-  start_date: DateTime.strptime("20/07/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("24/07/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("20/07/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("24/07/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking19 = Booking.create!(
   user: user9,
@@ -551,8 +551,8 @@ booking25 = Booking.create!(
 booking26 = Booking.create!(
   user: user6,
   boat: boat5,
-  start_date: DateTime.strptime("22/06/2022 11:00", "%d/%m/%Y %H:%M"),
-  end_date: DateTime.strptime("24/06/2022 17:00", "%d/%m/%Y %H:%M"),
+  start_date: DateTime.strptime("22/06/2023 11:00", "%d/%m/%Y %H:%M"),
+  end_date: DateTime.strptime("24/06/2023 17:00", "%d/%m/%Y %H:%M"),
 )
 booking27 = Booking.create!(
   user: user7,
